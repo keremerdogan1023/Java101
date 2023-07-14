@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ATM/ATM.iml" filepath="$PROJECT_DIR$/ATM/ATM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlanHesaplama/AlanHesaplama.iml" filepath="$PROJECT_DIR$/AlanHesaplama/AlanHesaplama.iml" />
       <module fileurl="file://$PROJECT_DIR$/Basic ATM OOP/Basic ATM OOP.iml" filepath="$PROJECT_DIR$/Basic ATM OOP/Basic ATM OOP.iml" />
       <module fileurl="file://$PROJECT_DIR$/BeybladeProgram/BeybladeProgram.iml" filepath="$PROJECT_DIR$/BeybladeProgram/BeybladeProgram.iml" />
       <module fileurl="file://$PROJECT_DIR$/Calculator/Calculator.iml" filepath="$PROJECT_DIR$/Calculator/Calculator.iml" />
@@ -14,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/Java101.iml" filepath="$PROJECT_DIR$/Java101.iml" />
       <module fileurl="file://$PROJECT_DIR$/LinkedList/LinkedList.iml" filepath="$PROJECT_DIR$/LinkedList/LinkedList.iml" />
       <module fileurl="file://$PROJECT_DIR$/Login/Login.iml" filepath="$PROJECT_DIR$/Login/Login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MathAndPhysicsInnerClasses/MathAndPhysicsInnerClasses.iml" filepath="$PROJECT_DIR$/MathAndPhysicsInnerClasses/MathAndPhysicsInnerClasses.iml" />
       <module fileurl="file://$PROJECT_DIR$/NotHesaplama/NotHesaplama.iml" filepath="$PROJECT_DIR$/NotHesaplama/NotHesaplama.iml" />
       <module fileurl="file://$PROJECT_DIR$/PrimeNumber/PrimeNumber.iml" filepath="$PROJECT_DIR$/PrimeNumber/PrimeNumber.iml" />
       <module fileurl="file://$PROJECT_DIR$/SingerProgram/SingerProgram.iml" filepath="$PROJECT_DIR$/SingerProgram/SingerProgram.iml" />
