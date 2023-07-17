@@ -14,22 +14,30 @@ public class Main {
             System.out.println("Harç bedeli kontrol ediliyor...");
 
             Thread.sleep(2000);
-            if(passanger.controlFeesAbroad() == false){
-                System.out.println(message);
+            try {
+                passanger.controlFeesAbroad();
+            } catch (TuitionException e) {
+                e.printStackTrace();
                 continue;
             }
             System.out.println("Siyasi yasak kontrol ediliyor...");
             Thread.sleep(2000);
-            if (passanger.controlForPoliticalBan() == false){
-                System.out.println(message);
+            try {
+                passanger.controlForPoliticalBan();
+            } catch (PoliticalException e) {
+                e.printStackTrace();
                 continue;
             }
+
             System.out.println("Vize durumu kontrol ediliyor...");
             Thread.sleep(2000);
-            if (passanger.checkVisaStatus() == true){
-                System.out.println(message);
+            try {
+                passanger.checkVisaStatus();
+            } catch (VisaException e) {
+                e.printStackTrace();
                 continue;
             }
+
             System.out.println("Kontroller bitmiştir. Yurtdışına çıkabilirsiniz...");
             break;
         }
