@@ -1,6 +1,23 @@
 import java.util.Scanner;
-
-public class Passanger implements RulesForGoingAbroad {
+class PoliticalException extends Exception{
+    @Override
+    public void printStackTrace() {
+        System.out.println("Siyasi yasağınız bulunuyor");
+    }
+}
+class VisaException extends Exception{
+    @Override
+    public void printStackTrace() {
+        System.out.println("Gerekli vizeniz bulunmamaktadır.");
+    }
+}
+class TuitionException extends Exception{
+    @Override
+    public void printStackTrace() {
+        System.out.println("Lütfen yurtdışı harcını tam yatırın...");
+    }
+}
+public class Passanger  {
     private int tuition;
     private boolean politicalBan;
     private boolean visaStatus;
@@ -33,38 +50,34 @@ public class Passanger implements RulesForGoingAbroad {
         }
     }
 
-    @Override
-    public boolean controlFeesAbroad() {
+
+    public void controlFeesAbroad() throws TuitionException {
         if (this.tuition < 15){
-            System.out.println("Lütfen harcı eksiksiz yatırın");
-            return false;
+            throw new TuitionException();
+
         }
         else{
             System.out.println("Harç işlemi tamam");
-            return true;
         }
     }
 
-    @Override
-    public boolean controlForPoliticalBan() {
+
+    public void controlForPoliticalBan() throws PoliticalException {
         if (this.politicalBan == true){
-            System.out.println("Siyasi yasağınız bulunuyor. Yurt dışına çıkamazsınız!");
-            return false;
+            throw new PoliticalException();
         }
         else {
             System.out.println("Siyasi yasağınız bulunmuyor");
-            return true;
         }
     }
 
-    @Override
-    public boolean checkVisaStatus() {
+
+    public void checkVisaStatus() throws VisaException {
         if (visaStatus == true){
-            System.out.println("Vize işlemleri tamam!");
-            return true;
-        }else {
-            System.out.println("Geçerli bir vizeniz bulunmamaktadır");
-            return false;
+            System.out.println("Vize işlemleriniz tamam");
+        }
+        else {
+            throw new VisaException();
         }
     }
 }
