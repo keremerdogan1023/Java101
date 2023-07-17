@@ -1,20 +1,20 @@
 public class Drayga extends Beyblade{
-    private String kutsalCanavar;
+    private String holyMonster;
 
-    public Drayga(String sahip, int donusHizi, int saldiriGucu, String kutsalCanavar) {
-        super(sahip, donusHizi, saldiriGucu);
-        this.kutsalCanavar = kutsalCanavar;
+    public Drayga(String owner, int rotationalSpeed, int attackPower, String holyMonster) {
+        super(owner, rotationalSpeed, attackPower);
+        this.holyMonster = holyMonster;
     }
 
     @Override
-    public void kutsalCanavarOrtayaCikar() {
-        System.out.println("Bu beyblade'in kutsal canavarı: "+ kutsalCanavar);
-        System.out.println(getSahip()+"'in beybladeinin saldırısı: Kaplan pençesi");
+    public void summonHolyMonster() {
+        System.out.println("Bu beyblade'in kutsal canavarı: "+ holyMonster);
+        System.out.println(getOwner()+"'in beybladeinin saldırısı: Kaplan pençesi");
     }
 
     @Override
-    public void bilgileriGoster() {
-        super.bilgileriGoster();
-        System.out.println("Kutsal canavar adı: "+ kutsalCanavar);
+    public void showInformations() {
+        super.showInformations();
+        System.out.println("Kutsal canavar adı: "+ holyMonster);
     }
 }

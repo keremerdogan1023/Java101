@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class Main {
-    private static Sarkicilar sarkicilar = new Sarkicilar();
+    private static Singers singers = new Singers();
     private static Scanner scanner = new Scanner(System.in);
-    public static void islemleriGoster(){
+    public static void showOperations(){
         System.out.println("0-İşlemleri Görüntüle");
         System.out.println("1-Şarkıcıları Görüntüle");
         System.out.println("2-Şarkıcı Ekle");
@@ -14,39 +14,39 @@ public class Main {
     }
     public static void main(String[] args) {
         System.out.println("Şarkıcı uygulamasına hoşgeldiniz...");
-        islemleriGoster();
+        showOperations();
         boolean exit = false;
-        int islem;
+        int operation;
         while (!exit){
             System.out.println("Yapıcağınız işlemi seçiniz:");
-            islem = scanner.nextInt();
+            operation = scanner.nextInt();
             scanner.nextLine();
-            if (islem == 0){
-                islemleriGoster();
-            } else if (islem == 1) {
-                sarkicilar.sarkicilariGoster();
-            } else if (islem == 2){
+            if (operation == 0){
+                showOperations();
+            } else if (operation == 1) {
+                singers.showSingers();
+            } else if (operation == 2){
                 System.out.println("Eklemek istediğiniz şarkıcının ismini giriniz:");
-                String sarkiciİsim = scanner.nextLine();
-                sarkicilar.sarkiciEkle(sarkiciİsim);
-            } else if (islem == 3) {
+                String singerName = scanner.nextLine();
+                singers.addSinger(singerName);
+            } else if (operation == 3) {
                 System.out.println("Güncellemek istediğiniz şarkıcının sırasını giriniz:");
-                int sira = scanner.nextInt();
+                int position = scanner.nextInt();
                 scanner.nextLine();
                 System.out.println("Yeni şarkıcı ismini giriniz:");
-                String yeniİsim = scanner.nextLine();
-                sarkicilar.sarkiciGuncelle(yeniİsim,sira);
-            } else if (islem == 4) {
+                String newName = scanner.nextLine();
+                singers.updateSinger(newName,position);
+            } else if (operation == 4) {
                 System.out.println("Silmek istediğiniz şarkıcının sırasını giriniz:");
-                int sira = scanner.nextInt();
+                int position = scanner.nextInt();
                 scanner.nextLine();
-                sarkicilar.sarkiciSil(sira);
-            } else if (islem == 5) {
+                singers.deleteSinger(position);
+            } else if (operation == 5) {
                 System.out.println("Aradığınız şarkıcının ismini giriniz:");
-                String arananİsim = scanner.nextLine();
-                sarkicilar.sarkiciAra(arananİsim);
+                String wantedName = scanner.nextLine();
+                singers.searchSinger(wantedName);
 
-            } else if (islem == 6) {
+            } else if (operation == 6) {
                 System.out.println("Sistemden çıkılıyor");
                 exit = true;
             }

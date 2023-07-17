@@ -3,49 +3,49 @@ import java.util.ListIterator;
 import java.util.Scanner;
 
 public class Main {
-    public static void islemleriBastir(){
+    public static void showOperations(){
         System.out.println("0- İşlemleri görüntüle");
         System.out.println("1- Bir sonraki şehre git ");
         System.out.println("2- Bir önceki şehre git");
         System.out.println("3- Uygulamadan çık");
     }
-    public static void  sehirleriTurla(LinkedList<String > sehirler){
+    public static void tourCities(LinkedList<String > cities){
         Scanner scanner = new Scanner(System.in);
-        ListIterator<String >iterator = sehirler.listIterator();
+        ListIterator<String >iterator = cities.listIterator();
 
-        int islem;
-        islemleriBastir();
+        int operation;
+        showOperations();
         if (!iterator.hasNext()){
             System.out.println("Herhangi bir şehir bulunmuyor.");
         }
         boolean exit = false;
-        boolean ileri = true;
+        boolean forward = true;
         while (!exit){
             System.out.println("Bir işlem seçiniz.");
-            islem=scanner.nextInt();
-            if (islem == 0){
-                islemleriBastir();
-            } else if (islem == 1) {
-                if (!ileri){
+            operation=scanner.nextInt();
+            if (operation == 0){
+                showOperations();
+            } else if (operation == 1) {
+                if (!forward){
                     if (iterator.hasNext()){
                         iterator.next();
                     }
-                    ileri = true;
+                    forward = true;
                 }
                 if (iterator.hasNext()){
                     System.out.println("Bir sonraki şehre gidiliyor:"+ iterator.next());
                 }
                 else{
                     System.out.println("Turumuz tamamlandı.");
-                    ileri = true;
+                    forward = true;
                 }
 
-            } else if (islem == 2) {
-                if (ileri){
+            } else if (operation == 2) {
+                if (forward){
                     if (iterator.hasPrevious()){
                         iterator.previous();
                     }
-                    ileri = false;
+                    forward = false;
                 }
                 if (iterator.hasPrevious()){
                     System.out.println("Bir önceki şehre gidiliyor:"+ iterator.previous());
@@ -54,17 +54,17 @@ public class Main {
                     System.out.println("Turun başındayız.");
                 }
 
-            } else if (islem == 3) {
+            } else if (operation == 3) {
                 exit = true;
             }
         }
     }
     public static void main(String[] args) {
-        LinkedList<String> sehirler = new LinkedList<String >();
+        LinkedList<String> cities = new LinkedList<String >();
 
-        sehirler.add("Ankara");
-        sehirler.add("Eskişehir");
-        sehirler.add("Adıyaman");
-        sehirleriTurla(sehirler);
+        cities.add("Ankara");
+        cities.add("Eskişehir");
+        cities.add("Adıyaman");
+        tourCities(cities);
     }
 }

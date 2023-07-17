@@ -1,29 +1,29 @@
 public class Dranza extends Beyblade{
-    private String kutsalCanavar;
+    private String holyMonster;
 
-    public Dranza(String sahip, int donusHizi, int saldiriGucu, String kutsalCanavar) {
-        super(sahip, donusHizi, saldiriGucu);
-        this.kutsalCanavar = kutsalCanavar;
+    public Dranza(String owner, int rotationalSpeed, int attackPower, String holyMonster) {
+        super(owner, rotationalSpeed, attackPower);
+        this.holyMonster = holyMonster;
     }
 
     @Override
-    public void kutsalCanavarOrtayaCikar() {
-        System.out.println("Bu beyblade'in kutsal canavarı: "+ kutsalCanavar);
-        System.out.println(getSahip()+"'in beybladeinin saldırısı: Alev kılıcı");
+    public void summonHolyMonster() {
+        System.out.println("Bu beyblade'in kutsal canavarı: "+ holyMonster);
+        System.out.println(getOwner()+"'in beybladeinin saldırısı: Alev kılıcı");
     }
 
     @Override
-    public void bilgileriGoster() {
-        super.bilgileriGoster();
-        System.out.println("Kutsal canavar adı: "+ kutsalCanavar);
+    public void showInformations() {
+        super.showInformations();
+        System.out.println("Kutsal canavar adı: "+ holyMonster);
 
     }
 
-    public String getKutsalCanavar() {
-        return kutsalCanavar;
+    public String getHolyMonster() {
+        return holyMonster;
     }
 
-    public void setKutsalCanavar(String kutsalCanavar) {
-        this.kutsalCanavar = kutsalCanavar;
+    public void setHolyMonster(String holyMonster) {
+        this.holyMonster = holyMonster;
     }
 }

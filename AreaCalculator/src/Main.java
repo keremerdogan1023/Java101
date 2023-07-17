@@ -12,7 +12,7 @@ public class Main {
                     "Çıkış için : i");
             System.out.println("Yapmak istediğiniz işlemi seçiniz.");
             String islem = scanner.nextLine();
-            Sekil sekil = null;
+            Shape shape = null;
 
             if (islem.equals("i")){
                 System.out.println("Çıkış yapılıyor");
@@ -21,14 +21,14 @@ public class Main {
                 System.out.println("Karenin kenar uzunluğunu giriniz:");
                 int kenarUzunlugu = scanner.nextInt();
                 scanner.nextLine();
-                sekil = new Kare("Kare1",kenarUzunlugu);
-                sekil.alanHesapla();
+                shape = new Square("Kare1",kenarUzunlugu);
+                shape.calculateArea();
             }else if (islem.equals("2")) {
                 System.out.println("Dairenin yarıçapını giriniz:");
                 int yaricap = scanner.nextInt();
                 scanner.nextLine();
-                sekil = new Daire("Daire1",yaricap);
-                sekil.alanHesapla();
+                shape = new Circle("Daire1",yaricap);
+                shape.calculateArea();
             }else if (islem.equals("3")) {
                 System.out.println("Üçgenin ilk kenarını giriniz:");
                 int ilkKenar = scanner.nextInt();
@@ -39,8 +39,8 @@ public class Main {
                 System.out.println("Üçgenin üçüncü kenarını giriniz:");
                 int ucuncuKenar = scanner.nextInt();
                 scanner.nextLine();
-                sekil = new Ucgen("Ucgen1",ilkKenar,ikinciKenar,ucuncuKenar);
-                sekil.alanHesapla();
+                shape = new Triangle("Ucgen1",ilkKenar,ikinciKenar,ucuncuKenar);
+                shape.calculateArea();
             }
             else {
                 System.out.println("Geçersiz işlem");

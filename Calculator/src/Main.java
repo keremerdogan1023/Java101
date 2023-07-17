@@ -1,28 +1,28 @@
 import java.util.Scanner;
 
 public class Main {
-    public static int toplama(int a, int b){
+    public static int addition(int a, int b){
         return a+b;
     }
-    public static int toplama(int a, int b, int c){
+    public static int addition(int a, int b, int c){
         return a+b+c;
     }
-    public static int cikarma(int a, int b){
+    public static int subtraction(int a, int b){
         return a-b;
     }
-    public static int cikarma(int a, int b,int c){
+    public static int subtraction(int a, int b, int c){
         return a-b-c;
     }
-    public static int carpma(int a, int b){
+    public static int multiplication(int a, int b){
         return a*b;
     }
-    public static int carpma(int a, int b,int c){
+    public static int multiplication(int a, int b, int c){
         return a*b*c;
     }
-    public static int bolme(int a, int b){
+    public static int division(int a, int b){
         return a/b;
     }
-    public static int bolme(int a, int b, int c){
+    public static int division(int a, int b, int c){
         return a/b/c;
     }
 
@@ -31,129 +31,128 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int sayi1;
-        int sayi2;
-        int sayi3;
-        double sonuc;
+        int number1;
+        int number2;
+        int number3;
+        double result;
         System.out.println(" 1.Toplama İşlemi: \n 2.Çıkarma İşlemi: " +
-                "\n 3.Çarpma İşlemi: \n 4.Bölme İşlemi:");
+                "\n 3.Çarpma İşlemi: \n 4.Bölme İşlemi:\n" +
+                "Çıkış yapmak için q'ya basın.");
 
         while (true){
+            int numberQuantity;
             System.out.println("\nİşlemi seçiniz:");
-            String islem = scanner.nextLine();
-            if (islem.equals("q")){
+            String operation = scanner.nextLine();
+            if (operation.equals("q")){
                 System.out.println("Çıkış yapılıyor...");
                 break;
-            } else if (islem.equals("1")) {
-                int sayiadeti;
-                System.out.println("İşlem yapmak istediğiniz sayı adetini giriniz(2 veya 3)");
-                sayiadeti = scanner.nextInt();
+            } else if (operation.equals("1")) {
 
-                if (sayiadeti == 2){
+                System.out.println("İşlem yapmak istediğiniz sayı adetini giriniz(2 veya 3)");
+                numberQuantity = scanner.nextInt();
+
+                if (numberQuantity == 2){
                     System.out.println("İlk sayıyı giriniz:");
-                    sayi1 = scanner.nextInt();
+                    number1 = scanner.nextInt();
                     System.out.println("İkinci sayıyı giriniz:");
-                    sayi2 = scanner.nextInt();
+                    number2 = scanner.nextInt();
                     scanner.nextLine();
-                    int toplam = toplama(sayi1,sayi2);
-                    System.out.println("Sonuç:" + toplam);
-                } else if (sayiadeti == 3) {
+                    result = addition(number1,number2);
+                    System.out.println("Sonuç:" + result);
+                } else if (numberQuantity == 3) {
                     System.out.println("İlk sayıyı giriniz:");
-                    sayi1 = scanner.nextInt();
+                    number1 = scanner.nextInt();
                     System.out.println("İkinci sayıyı giriniz:");
-                    sayi2 = scanner.nextInt();
+                    number2 = scanner.nextInt();
                     System.out.println("Üçüncü sayıyı giriniz:");
-                    sayi3 = scanner.nextInt();
+                    number3 = scanner.nextInt();
                     scanner.nextLine();
-                    int toplam = toplama(sayi1,sayi2,sayi3);
-                    System.out.println("Sonuç:" + toplam);
+                    result = addition(number1,number2,number3);
+                    System.out.println("Sonuç:" + result);
 
                 }
                 else {
                     scanner.nextLine();
                     System.out.println("Uygun bir method bulunmamaktadır.");
                 }
-            } else if (islem.equals("2")) {
-                int sayiadeti;
+            } else if (operation.equals("2")) {
                 System.out.println("İşlem yapmak istediğiniz sayı adetini giriniz(2 veya 3)");
-                sayiadeti = scanner.nextInt();
+                numberQuantity = scanner.nextInt();
 
-                if (sayiadeti == 2){
+                if (numberQuantity == 2){
                     System.out.println("İlk sayıyı giriniz:");
-                    sayi1 = scanner.nextInt();
+                    number1 = scanner.nextInt();
                     System.out.println("İkinci sayıyı giriniz:");
-                    sayi2 = scanner.nextInt();
+                    number2 = scanner.nextInt();
                     scanner.nextLine();
-                    sonuc = cikarma(sayi1,sayi2);
-                    System.out.println("Sonuç:" + sonuc);
-                } else if (sayiadeti == 3) {
+                    result = subtraction(number1,number2);
+                    System.out.println("Sonuç:" + result);
+                } else if (numberQuantity == 3) {
                     System.out.println("İlk sayıyı giriniz:");
-                    sayi1 = scanner.nextInt();
+                    number1 = scanner.nextInt();
                     System.out.println("İkinci sayıyı giriniz:");
-                    sayi2 = scanner.nextInt();
+                    number2 = scanner.nextInt();
                     System.out.println("Üçüncü sayıyı giriniz:");
-                    sayi3 = scanner.nextInt();
+                    number3 = scanner.nextInt();
                     scanner.nextLine();
-                    sonuc = cikarma(sayi1,sayi2,sayi3);
-                    System.out.println("Sonuç:" + sonuc);
+                    result = subtraction(number1,number2,number3);
+                    System.out.println("Sonuç:" + result);
 
                 }
                 else {
                     scanner.nextLine();
                     System.out.println("Uygun bir method bulunmamaktadır.");
                 }
-            } else if (islem.equals("3")) {
-                int sayiadeti;
+            } else if (operation.equals("3")) {
                 System.out.println("İşlem yapmak istediğiniz sayı adetini giriniz(2 veya 3)");
-                sayiadeti = scanner.nextInt();
+                numberQuantity = scanner.nextInt();
 
-                if (sayiadeti == 2){
+                if (numberQuantity == 2){
                     System.out.println("İlk sayıyı giriniz:");
-                    sayi1 = scanner.nextInt();
+                    number1 = scanner.nextInt();
                     System.out.println("İkinci sayıyı giriniz:");
-                    sayi2 = scanner.nextInt();
+                    number2 = scanner.nextInt();
                     scanner.nextLine();
-                    sonuc = carpma(sayi1,sayi2);
-                    System.out.println("Sonuç:" + sonuc);
-                } else if (sayiadeti == 3) {
+                    result = multiplication(number1,number2);
+                    System.out.println("Sonuç:" + result);
+                } else if (numberQuantity == 3) {
                     System.out.println("İlk sayıyı giriniz:");
-                    sayi1 = scanner.nextInt();
+                    number1 = scanner.nextInt();
                     System.out.println("İkinci sayıyı giriniz:");
-                    sayi2 = scanner.nextInt();
+                    number2 = scanner.nextInt();
                     System.out.println("Üçüncü sayıyı giriniz:");
-                    sayi3 = scanner.nextInt();
+                    number3 = scanner.nextInt();
                     scanner.nextLine();
-                    sonuc = carpma(sayi1,sayi2,sayi3);
-                    System.out.println("Sonuç:" + sonuc);
+                    result = multiplication(number1,number2,number3);
+                    System.out.println("Sonuç:" + result);
 
                 }
                 else {
                     scanner.nextLine();
                     System.out.println("Uygun bir method bulunmamaktadır.");
                 }
-            } else if (islem.equals("4")) {
-                    int sayiadeti;
+            } else if (operation.equals("4")) {
                     System.out.println("İşlem yapmak istediğiniz sayı adetini giriniz(2 veya 3)");
-                    sayiadeti = scanner.nextInt();
+                    numberQuantity = scanner.nextInt();
 
-                    if (sayiadeti == 2){
+                    if (numberQuantity == 2){
                         System.out.println("İlk sayıyı giriniz:");
-                        sayi1 = scanner.nextInt();
+                        number1 = scanner.nextInt();
                         System.out.println("İkinci sayıyı giriniz:");
-                        sayi2 = scanner.nextInt();
+                        number2 = scanner.nextInt();
                         scanner.nextLine();
-                        sonuc = bolme(sayi1,sayi2);
-                        System.out.println("Sonuç:" + sonuc);
-                    } else if (sayiadeti == 3) {
+                        result = division(number1,number2);
+                        System.out.println("Sonuç:" + result);
+                    } else if (numberQuantity == 3) {
                         System.out.println("İlk sayıyı giriniz:");
-                        sayi1 = scanner.nextInt();
+                        number1 = scanner.nextInt();
                         System.out.println("İkinci sayıyı giriniz:");
-                        sayi2 = scanner.nextInt();
+                        number2 = scanner.nextInt();
                         System.out.println("Üçüncü sayıyı giriniz:");
-                        sayi3 = scanner.nextInt();
+                        number3 = scanner.nextInt();
                         scanner.nextLine();
-                        sonuc = bolme(sayi1,sayi2,sayi3);
-                        System.out.println("Sonuç:" + sonuc);
+                        result = division(number1,number2,number3);
+                        System.out.println("Sonuç:" + result);
 
                     }
                     else {

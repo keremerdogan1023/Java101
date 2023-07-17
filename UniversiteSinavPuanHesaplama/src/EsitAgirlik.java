@@ -1,10 +1,10 @@
-public class EsitAgirlik extends  Aday{
-    public EsitAgirlik(int turkce, int matematik, int edebiyat, int fizik, String isim) {
-        super(turkce, matematik, edebiyat, fizik, isim);
+public class EsitAgirlik extends Candidate {
+    public EsitAgirlik(int turkishSubject, int mathSubject, int literatureSubject, int physicsSubject, String name) {
+        super(turkishSubject, mathSubject, literatureSubject, physicsSubject, name);
     }
 
     @Override
-    int puanHesapla() {
-        return getTurkce()*5 + getEdebiyat()*4 + getMatematik()*4 + getFizik()*1;
+    int calculatePoints() {
+        return getTurkishSubject()*5 + getLiteratureSubject()*4 + getMathSubject()*4 + getPhysicsSubject()*1;
     }
 }

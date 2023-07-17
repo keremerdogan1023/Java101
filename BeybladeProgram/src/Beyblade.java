@@ -1,46 +1,46 @@
 public class Beyblade {
-    private String sahip;
-    private int donusHizi;
-    private int saldiriGucu;
+    private String owner;
+    private int rotationalSpeed;
+    private int attackPower;
 
-    public Beyblade(String sahip, int donusHizi, int saldiriGucu) {
-        this.sahip = sahip;
-        this.donusHizi = donusHizi;
-        this.saldiriGucu = saldiriGucu;
-    }
-
-    public String getSahip() {
-        return sahip;
+    public Beyblade(String owner, int rotationalSpeed, int attackPower) {
+        this.owner = owner;
+        this.rotationalSpeed = rotationalSpeed;
+        this.attackPower = attackPower;
     }
 
-    public void setSahip(String sahip) {
-        this.sahip = sahip;
+    public String getOwner() {
+        return owner;
     }
 
-    public int getDonusHizi() {
-        return donusHizi;
+    public void setOwner(String owner) {
+        this.owner = owner;
     }
 
-    public void setDonusHizi(int donusHizi) {
-        this.donusHizi = donusHizi;
+    public int getRotationalSpeed() {
+        return rotationalSpeed;
     }
 
-    public int getSaldiriGucu() {
-        return saldiriGucu;
+    public void setRotationalSpeed(int rotationalSpeed) {
+        this.rotationalSpeed = rotationalSpeed;
     }
 
-    public void setSaldiriGucu(int saldiriGucu) {
-        this.saldiriGucu = saldiriGucu;
+    public int getAttackPower() {
+        return attackPower;
     }
-    public void saldir(){
-        System.out.println(getSahip()+ " "+ saldiriGucu + " ve "+ donusHizi + " ile saldırıyor.");
+
+    public void setAttackPower(int attackPower) {
+        this.attackPower = attackPower;
     }
-    public void kutsalCanavarOrtayaCikar(){
+    public void attack(){
+        System.out.println(getOwner()+ " "+ attackPower + " ve "+ rotationalSpeed + " ile saldırıyor.");
+    }
+    public void summonHolyMonster(){
         System.out.println("Bu beyblade'in kutsal canavarı bulunmamaktadır.");
     }
-    public void bilgileriGoster(){
-        System.out.println("Beyblade'in sahibinin ismi : " + sahip +
-                "\nBeyblade'in dönüş hızı: " + donusHizi +
-                "\nBeyblade'in saldırı gücü: " + saldiriGucu);
+    public void showInformations(){
+        System.out.println("Beyblade'in sahibinin ismi : " + owner +
+                "\nBeyblade'in dönüş hızı: " + rotationalSpeed +
+                "\nBeyblade'in saldırı gücü: " + attackPower);
     }
 }

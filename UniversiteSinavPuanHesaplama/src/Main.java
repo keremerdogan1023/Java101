@@ -3,105 +3,106 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Üniversite sınavı puan hesaplama programı.");
-        String islemler = "İşlemler...\n" +
+        String operations = "İşlemler...\n" +
                 "1.Eşit ağırlık puanları yazdırma .."+
                 "2.Sayısal puanları yazdırma"+
                 "3.Eşit ağırlık 1.bulma"+
                 "4. Sayısal 1. bulma" +
                 "Çıkış için i'ye basın";
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Öğrencinin ismini giriniz:");
-        String isim1 = scanner.nextLine();
-        System.out.println("Öğrencinin Türkçe netini giriniz:");
-        int netTurkce1 = scanner.nextInt();
-        System.out.println("Öğrencinin Matematik netini giriniz:");
-        int netMatematik1 = scanner.nextInt();
-        System.out.println("Öğrencinin Edebiyat netini giriniz:");
-        int netEdebiyat1 = scanner.nextInt();
-        System.out.println("Öğrencinin Fizik netini giriniz:");
-        int netFizik1 = scanner.nextInt();
+        System.out.println("1. Öğrencinin ismini giriniz:");
+        String name1 = scanner.nextLine();
+        System.out.println("1. Öğrencinin Türkçe netini giriniz:");
+        int netTurkishSubject = scanner.nextInt();
+        System.out.println("1. Öğrencinin Matematik netini giriniz:");
+        int netMathSubject = scanner.nextInt();
+        System.out.println("1. Öğrencinin Edebiyat netini giriniz:");
+        int netLiteratureSubject = scanner.nextInt();
+        System.out.println("1. Öğrencinin Fizik netini giriniz:");
+        int netPhysicsSubject = scanner.nextInt();
         scanner.nextLine();
-        System.out.println("Öğrencinin ismini giriniz:");
-        String isim2 = scanner.nextLine();
-        System.out.println("Öğrencinin Türkçe netini giriniz:");
-        int netTurkce2 = scanner.nextInt();
-        System.out.println("Öğrencinin Matematik netini giriniz:");
-        int netMatematik2 = scanner.nextInt();
-        System.out.println("Öğrencinin Edebiyat netini giriniz:");
-        int netEdebiyat2 = scanner.nextInt();
-        System.out.println("Öğrencinin Fizik netini giriniz:");
-        int netFizik2 = scanner.nextInt();
+        System.out.println("2. Öğrencinin ismini giriniz:");
+        String name2 = scanner.nextLine();
+        System.out.println("2. Öğrencinin Türkçe netini giriniz:");
+        int netTurkishSubject2 = scanner.nextInt();
+        System.out.println("2. Öğrencinin Matematik netini giriniz:");
+        int netMathSubject2 = scanner.nextInt();
+        System.out.println("2. Öğrencinin Edebiyat netini giriniz:");
+        int netLiteratureSubject2 = scanner.nextInt();
+        System.out.println("2. Öğrencinin Fizik netini giriniz:");
+        int netPhysicsSubject2 = scanner.nextInt();
         scanner.nextLine();
-        System.out.println("Öğrencinin ismini giriniz:");
-        String isim3 = scanner.nextLine();
-        System.out.println("Öğrencinin Türkçe netini giriniz:");
-        int netTurkce3 = scanner.nextInt();
-        System.out.println("Öğrencinin Matematik netini giriniz:");
-        int netMatematik3 = scanner.nextInt();
-        System.out.println("Öğrencinin Edebiyat netini giriniz:");
-        int netEdebiyat3 = scanner.nextInt();
-        System.out.println("Öğrencinin Fizik netini giriniz:");
-        int netFizik3 = scanner.nextInt();
+        System.out.println("3. Öğrencinin ismini giriniz:");
+        String name3 = scanner.nextLine();
+        System.out.println("3. Öğrencinin Türkçe netini giriniz:");
+        int netTurkishSubject3 = scanner.nextInt();
+        System.out.println("3. Öğrencinin Matematik netini giriniz:");
+        int netMathSubject3 = scanner.nextInt();
+        System.out.println("3. Öğrencinin Edebiyat netini giriniz:");
+        int netLiteratureSubject3 = scanner.nextInt();
+        System.out.println("3. Öğrencinin Fizik netini giriniz:");
+        int netPhysicsSubject3 = scanner.nextInt();
         scanner.nextLine();
+        System.out.println(operations);
         while (true){
 
             System.out.print("İşlemi Giriniz : ");
-            String islem = scanner.nextLine();
-            if (islem.equals("i")){
+            String operation = scanner.nextLine();
+            if (operation.equals("i")){
                 System.out.println("Çıkış yapılıyor...");
                 break;
-            }else if (islem.equals("1")) {
+            }else if (operation.equals("1")) {
 
-                EsitAgirlik ogrenci1 = new EsitAgirlik(netTurkce1, netMatematik1, netEdebiyat1, netFizik1,isim1);
-                EsitAgirlik ogrenci2 = new EsitAgirlik(netTurkce2, netMatematik2, netEdebiyat2, netFizik2,isim2);
-                EsitAgirlik ogrenci3 = new EsitAgirlik(netTurkce3, netMatematik3, netEdebiyat3, netFizik3,isim3);
-                System.out.println(isim1+":" + ogrenci1.puanHesapla()+"\n"+
-                        isim2+":" + ogrenci2.puanHesapla()+"\n"+
-                        isim3+":" + ogrenci3.puanHesapla()+"\n");
+                EsitAgirlik student1 = new EsitAgirlik(netTurkishSubject, netMathSubject, netLiteratureSubject2, netPhysicsSubject,name1);
+                EsitAgirlik student2 = new EsitAgirlik(netTurkishSubject2, netMathSubject2, netLiteratureSubject2, netPhysicsSubject2,name2);
+                EsitAgirlik student3 = new EsitAgirlik(netTurkishSubject3, netMathSubject3, netLiteratureSubject3, netPhysicsSubject3,name3);
+                System.out.println(name1+":" + student1.calculatePoints()+"\n"+
+                        name2+":" + student2.calculatePoints()+"\n"+
+                        name3+":" + student3.calculatePoints()+"\n");
 
             }
-            else if (islem.equals("2")) {
+            else if (operation.equals("2")) {
 
-                Sayisal ogrenci1 = new Sayisal(netTurkce1, netMatematik1, netEdebiyat1, netFizik1,isim1);
-                Sayisal ogrenci2 = new Sayisal(netTurkce2, netMatematik2, netEdebiyat2, netFizik2,isim2);
-                Sayisal ogrenci3 = new Sayisal(netTurkce3, netMatematik3, netEdebiyat3, netFizik3,isim3);
-                System.out.println(isim1+":" + ogrenci1.puanHesapla()+"\n"+
-                        isim2+":" + ogrenci2.puanHesapla()+"\n"+
-                        isim3+":" + ogrenci3.puanHesapla()+"\n");
-            } else if (islem.equals("3")) {
-                EsitAgirlik ogrenci1 = new EsitAgirlik(netTurkce1, netMatematik1, netEdebiyat1, netFizik1,isim1);
-                EsitAgirlik ogrenci2 = new EsitAgirlik(netTurkce2, netMatematik2, netEdebiyat2, netFizik2,isim2);
-                EsitAgirlik ogrenci3 = new EsitAgirlik(netTurkce3, netMatematik3, netEdebiyat3, netFizik3,isim3);
+                Sayisal student1 = new Sayisal(netTurkishSubject, netMathSubject, netLiteratureSubject2, netPhysicsSubject,name1);
+                Sayisal student2 = new Sayisal(netTurkishSubject2, netMathSubject2, netLiteratureSubject2, netPhysicsSubject2,name2);
+                Sayisal student3 = new Sayisal(netTurkishSubject3, netMathSubject3, netLiteratureSubject3, netPhysicsSubject3,name3);
+                System.out.println(name1+":" + student1.calculatePoints()+"\n"+
+                        name2+":" + student2.calculatePoints()+"\n"+
+                        name3+":" + student3.calculatePoints()+"\n");
+            } else if (operation.equals("3")) {
+                EsitAgirlik student1 = new EsitAgirlik(netTurkishSubject, netMathSubject, netLiteratureSubject2, netPhysicsSubject,name1);
+                EsitAgirlik student2 = new EsitAgirlik(netTurkishSubject2, netMathSubject2, netLiteratureSubject2, netPhysicsSubject2,name2);
+                EsitAgirlik student3 = new EsitAgirlik(netTurkishSubject3, netMathSubject3, netLiteratureSubject3, netPhysicsSubject3,name3);
 
-                EsitAgirlik birinci = birinci(ogrenci1,ogrenci2, ogrenci3);
+                EsitAgirlik firstPlaceHolder = firstPlaceHolder(student1,student2, student3);
 
-                System.out.println("Birinci Eşit Ağırlık Öğrencisi : " + birinci.getIsim());
-                System.out.println("Öğrenci Puanı : " + birinci.puanHesapla());
-            } else if (islem.equals("4")) {
-                Sayisal ogrenci1 = new Sayisal(netTurkce1, netMatematik1, netEdebiyat1, netFizik1,isim1);
-                Sayisal ogrenci2 = new Sayisal(netTurkce2, netMatematik2, netEdebiyat2, netFizik2,isim2);
-                Sayisal ogrenci3 = new Sayisal(netTurkce3, netMatematik3, netEdebiyat3, netFizik3,isim3);
-                Sayisal birinci = birinci(ogrenci1,ogrenci2, ogrenci3);
+                System.out.println("Birinci Eşit Ağırlık Öğrencisi : " + firstPlaceHolder.getName());
+                System.out.println("Öğrenci Puanı : " + firstPlaceHolder.calculatePoints());
+            } else if (operation.equals("4")) {
+                Sayisal student1 = new Sayisal(netTurkishSubject, netMathSubject, netLiteratureSubject2, netPhysicsSubject,name1);
+                Sayisal student2 = new Sayisal(netTurkishSubject2, netMathSubject2, netLiteratureSubject2, netPhysicsSubject2,name2);
+                Sayisal student3 = new Sayisal(netTurkishSubject3, netMathSubject3, netLiteratureSubject3, netPhysicsSubject3,name3);
+                Sayisal firstPlaceHolder = firstPlaceHolder(student1,student2, student3);
 
-                System.out.println("Birinci Eşit Ağırlık Öğrencisi : " + birinci.getIsim());
-                System.out.println("Öğrenci Puanı : " + birinci.puanHesapla());
+                System.out.println("Birinci Eşit Ağırlık Öğrencisi : " + firstPlaceHolder.getName());
+                System.out.println("Öğrenci Puanı : " + firstPlaceHolder.calculatePoints());
             }else {
                 System.out.println("Geçersiz işlem!");
             }
         }
         }
 
-    public static <E extends Aday> E birinci(E e1,E e2,E e3) {
+    public static <E extends Candidate> E firstPlaceHolder(E e1, E e2, E e3) {
 
-        if (e1.puanHesapla() > e2.puanHesapla() && e1.puanHesapla() > e3.puanHesapla()) {
+        if (e1.calculatePoints() > e2.calculatePoints() && e1.calculatePoints() > e3.calculatePoints()) {
 
             return e1;
         }
-        else if (e2.puanHesapla() > e1.puanHesapla() && e2.puanHesapla() > e3.puanHesapla()) {
+        else if (e2.calculatePoints() > e1.calculatePoints() && e2.calculatePoints() > e3.calculatePoints()) {
 
             return e2;
         }
-        else if (e3.puanHesapla() > e2.puanHesapla() && e3.puanHesapla() > e1.puanHesapla()) {
+        else if (e3.calculatePoints() > e2.calculatePoints() && e3.calculatePoints() > e1.calculatePoints()) {
 
             return e3;
         }

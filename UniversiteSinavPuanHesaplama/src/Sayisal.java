@@ -1,10 +1,10 @@
-public class Sayisal extends  Aday{
-    public Sayisal(int turkce, int matematik, int edebiyat, int fizik, String isim) {
-        super(turkce, matematik, edebiyat, fizik, isim);
+public class Sayisal extends Candidate {
+    public Sayisal(int turkishSubject, int mathSubject, int literatureSubject, int physicsSubject, String name) {
+        super(turkishSubject, mathSubject, literatureSubject, physicsSubject, name);
     }
 
     @Override
-    int puanHesapla() {
-        return getTurkce()*5 + getMatematik()*4 + getFizik()*4 + getEdebiyat() * 1;
+    int calculatePoints() {
+        return getTurkishSubject()*5 + getMathSubject()*4 + getPhysicsSubject()*4 + getLiteratureSubject() * 1;
     }
 }

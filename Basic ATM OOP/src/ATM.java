@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
 public class ATM {
-    public void calis(Hesap hesap){
+    public void calis(Account account){
         Login login = new Login();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Hoşgeldiniz");
         int deneme_hakki = 3;
-        int bakiye = hesap.getBakiye();
+        int bakiye = account.getBalance();
         while (true){
-            if(login.login(hesap)){
+            if(login.login(account)){
                 System.out.println("Giriş Başarılı");
                 break;
             }
@@ -37,7 +37,7 @@ public class ATM {
                 int tutar = scanner.nextInt();
                 scanner.nextLine();
                 if (tutar<=bakiye){
-                    hesap.paraCek(tutar);
+                    account.paraCek(tutar);
                 }
                 else {
                     System.out.println("Bakiye yetersiz");
@@ -47,7 +47,7 @@ public class ATM {
                 System.out.println("Yatırmak istediğiniz miktarı giriniz");
                 int tutar = scanner.nextInt();
                 scanner.nextLine();
-                hesap.paraYatir(tutar);
+                account.paraYatir(tutar);
 
             }
             else {

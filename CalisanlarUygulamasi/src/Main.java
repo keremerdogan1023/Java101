@@ -10,45 +10,45 @@ public class Main {
 
         while (true){
             System.out.println("Yapacağınız işlemi seçiniz:");
-            String islem = scanner.nextLine();
-            if (islem.equals("i")){
+            String operation = scanner.nextLine();
+            if (operation.equals("i")){
                 System.out.println("Sistemden çıkış yapılıyor...");
                 break;
-            } else if (islem.equals("1")) {
-                Yazilimci yazilimci = new Yazilimci(1,"Kerem", "Erdoğan", "Java");
+            } else if (operation.equals("1")) {
+                SoftwareDeveloper softwareDeveloper = new SoftwareDeveloper(1,"Kerem", "Erdoğan", "Java");
                 System.out.println("1. Bilgileri Göster \n"+
                         "2. Taske Başla\n "+
                         "Çıkış için i'ye basın");
                 while (true){
                     System.out.println("İşlemi seçiniz: ");
-                    String yazilimciIslem = scanner.nextLine();
-                    if (yazilimciIslem.equals("i")){
+                    String softwareDevOperation = scanner.nextLine();
+                    if (softwareDevOperation.equals("i")){
                         System.out.println("Sistemden çıkış yapılıyor...");
                         break;
-                    } else if (yazilimciIslem.equals("1")) {
-                        yazilimci.bilgileriAl();
-                    } else if (yazilimciIslem.equals("2")) {
-                        yazilimci.taskYap();
+                    } else if (softwareDevOperation.equals("1")) {
+                        softwareDeveloper.getInformation();
+                    } else if (softwareDevOperation.equals("2")) {
+                        softwareDeveloper.doTask();
                     }else {
                         System.out.println("Geçersiz İşlem!!");
                     }
                 }
-            }else if (islem.equals("2")) {
-                Yonetici yonetici = new Yonetici(2,"Ahmet", "Koca", 5);
+            }else if (operation.equals("2")) {
+                Manager manager = new Manager(2,"Ahmet", "Koca", 5);
                 System.out.println("1. Bilgileri Göster \n"+
                         "2. Çalışan işe al\n "+
                         "Çıkış için i'ye basın");
                 while (true){
                     System.out.println("İşlemi seçiniz: ");
-                    String yoneticiIslem = scanner.nextLine();
-                    Calisan calisan = new Calisan(1,"Emre","Ölçer");
-                    if (yoneticiIslem.equals("i")){
+                    String managerOperation = scanner.nextLine();
+                    Employee employee = new Employee(1,"Emre","Ölçer");
+                    if (managerOperation.equals("i")){
                         System.out.println("Sistemden çıkış yapılıyor...");
                         break;
-                    } else if (yoneticiIslem.equals("1")) {
-                        yonetici.bilgileriAl();
-                    } else if (yoneticiIslem.equals("2")) {
-                        yonetici.iseAlim(calisan);
+                    } else if (managerOperation.equals("1")) {
+                        manager.getInformation();
+                    } else if (managerOperation.equals("2")) {
+                        manager.hiring(employee);
                     }else {
                         System.out.println("Geçersiz İşlem!!");
                     }

@@ -1,7 +1,7 @@
-public abstract class Sekil {
+public abstract class Shape {
     private String name;
 
-    public Sekil(String name) {
+    public Shape(String name) {
         this.name = name;
     }
 
@@ -13,5 +13,5 @@ public abstract class Sekil {
         this.name = name;
     }
 
-    abstract void alanHesapla();
+    abstract void calculateArea();
 }

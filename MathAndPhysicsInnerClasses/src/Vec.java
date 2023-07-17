@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
 public class Vec {
-    private String isim;
+    private String name;
 
     private int i;
     private int j;
     private int k;
-    public Vec(String isim) {
-        this.isim = isim;
+    public Vec(String name) {
+        this.name = name;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Vektörün i, j ve k değerlerini giriniz...");
         System.out.println("i: ");
@@ -19,12 +19,12 @@ public class Vec {
 
     }
 
-    public String getIsim() {
-        return isim;
+    public String getName() {
+        return name;
     }
 
-    public void setIsim(String isim) {
-        this.isim = isim;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getI() {

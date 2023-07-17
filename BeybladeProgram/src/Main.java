@@ -8,21 +8,21 @@ public class Main {
         System.out.println("Çıkış için i'ye basın");
         while (true){
             System.out.println("Hangi Beyblade'i üretmek istiyorsunuz: ");
-            String beybladeTuru = scanner.nextLine();
-            if (beybladeTuru.equals("i")){
+            String beybladeType = scanner.nextLine();
+            if (beybladeType.equals("i")){
                 System.out.println("Çıkış yapılıyor...");
                 break;
             }
             else {
                 BeybladeFactory beybladeFactory = new BeybladeFactory();
-                Beyblade beyblade = beybladeFactory.beybladeUret(beybladeTuru);
+                Beyblade beyblade = beybladeFactory.createBeyblade(beybladeType);
 
                 if (beyblade == null){
                     System.out.println("Geçersiz beyblade ismi!");
                 }
                 else {
-                    beyblade.bilgileriGoster();
-                    beyblade.saldir();
+                    beyblade.showInformations();
+                    beyblade.attack();
                 }
             }
 

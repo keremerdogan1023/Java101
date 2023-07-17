@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Havalimanına hoşgeldiniz...");
-        String sartlar = "Yurtdışı Çıkış Kuralları:\n" +
+        String conditions = "Yurtdışı Çıkış Kuralları:\n" +
                 "--------------------------------------------------------\n"+
                 "Siyasi Yasağınınızın bulunmaması gerekiyor.\n"+
                 "Gideceğiniz ülkeye uygun vizenizin bulunması gerekiyor.\n"+
@@ -9,24 +9,24 @@ public class Main {
                 "--------------------------------------------------------";
         String message = "Bütün şartların sağlanması gerekmektedir";
         while (true){
-            System.out.println(sartlar);
-            Yolcu yolcu = new Yolcu();
+            System.out.println(conditions);
+            Passanger passanger = new Passanger();
             System.out.println("Harç bedeli kontrol ediliyor...");
 
             Thread.sleep(2000);
-            if(yolcu.yurtdisiHarciKontrol() == false){
+            if(passanger.controlFeesAbroad() == false){
                 System.out.println(message);
                 continue;
             }
             System.out.println("Siyasi yasak kontrol ediliyor...");
             Thread.sleep(2000);
-            if (yolcu.siyasiYasakKontrol() == false){
+            if (passanger.controlForPoliticalBan() == false){
                 System.out.println(message);
                 continue;
             }
             System.out.println("Vize durumu kontrol ediliyor...");
             Thread.sleep(2000);
-            if (yolcu.vizeDurumuKontrol() == true){
+            if (passanger.checkVisaStatus() == true){
                 System.out.println(message);
                 continue;
             }

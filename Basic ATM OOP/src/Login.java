@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Login {
-    public boolean login(Hesap hesap){
+    public boolean login(Account account){
         Scanner scanner = new Scanner(System.in);
         String kullanici_adi;
         String sifre;
@@ -9,7 +9,7 @@ public class Login {
         kullanici_adi = scanner.nextLine();
         System.out.println("Şifrenizi giriniz:");
         sifre = scanner.nextLine();
-        if (kullanici_adi.equals(hesap.getKullanici_adi())  && sifre.equals(hesap.getSifre())){
+        if (kullanici_adi.equals(account.getId())  && sifre.equals(account.getPassword())){
             System.out.println("Başarıyla giriş yapıldı.");
             return true;
         }

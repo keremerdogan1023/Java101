@@ -1,5 +1,5 @@
 public class BeybladeFactory {
-    public Beyblade beybladeUret(String beybladeTuru){
+    public Beyblade createBeyblade(String beybladeTuru){
         if (beybladeTuru.equals("Dragon")){
             return new Dragon("Takao",800,300,"Mavi Ejderha","Kutsal Canavarla Konuşma");
         } else if (beybladeTuru.equals("Dranza")) {
