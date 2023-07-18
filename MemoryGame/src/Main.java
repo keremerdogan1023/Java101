@@ -1,9 +1,21 @@
+import java.io.File;
 import java.util.Scanner;
 
 public class Main {
     private static Card[][] cards = new Card[4][4];
-    public static void main(String[] args) {
 
+    public static void loadGameFromSave(){
+        Scanner scanner = new Scanner(System.in);
+        File file = new File("save.bin");
+        if (file.exists()){
+            System.out.println("Kaydedilmiş bir oyununuz var kayıttan devam etmek ister misiniz? (yes or no)");
+            String answer =scanner.nextLine();
+            if (answer.equals("yes")){
+                cards = GameSave.loadGame();
+                return;
+            }
+
+        }
         cards[0][0] = new Card('E');
         cards[0][1] = new Card('A');
         cards[0][2] = new Card('B');
@@ -20,9 +32,38 @@ public class Main {
         cards[3][1] = new Card('G');
         cards[3][2] = new Card('B');
         cards[3][3] = new Card('C');
-        //oyunTahtasi();
-        while (isGameFinished() == false){
+
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+        loadGameFromSave();
+        while (isGameFinished() == false) {
+
             gameBoard();
+            System.out.print("Çıkış için q'ya basın (yes ya da no)");
+            String exit = scanner.nextLine();
+
+            if (exit.equals("yes")) {
+                System.out.print("Oyunu kaydetmek istiyor musunuz ? (yes ya da no)");
+
+                String save = scanner.nextLine();
+
+                if (save.equals("yes")){
+
+                    GameSave.saveGame(cards);
+
+                }
+                else {
+                    System.out.println("Oyun kaydedilmedi");
+                }
+                System.out.println("Programdan Çıkılıyor...");
+                break;
+
+            }
+
+
             guess();
         }
 
@@ -69,6 +110,7 @@ public class Main {
         int i2 = scanner.nextInt();
         System.out.println("İkinci tahmin için j değerini giriniz: ");
         int j2 = scanner.nextInt();
+        scanner.nextLine();
         if (cards[i1][j1].getValue() == cards[i2][j2].getValue()){
             cards[i2][j2].setGuess(true);
             System.out.println("Doğru tahmin.");
