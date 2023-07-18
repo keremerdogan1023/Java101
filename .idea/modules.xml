@@ -4,13 +4,16 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ATM/ATM.iml" filepath="$PROJECT_DIR$/ATM/ATM.iml" />
       <module fileurl="file://$PROJECT_DIR$/AreaCalculator/AreaCalculator.iml" filepath="$PROJECT_DIR$/AreaCalculator/AreaCalculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AvailabilityForGoingAbroad/AvailabilityForGoingAbroad.iml" filepath="$PROJECT_DIR$/AvailabilityForGoingAbroad/AvailabilityForGoingAbroad.iml" />
       <module fileurl="file://$PROJECT_DIR$/Basic ATM OOP/Basic ATM OOP.iml" filepath="$PROJECT_DIR$/Basic ATM OOP/Basic ATM OOP.iml" />
       <module fileurl="file://$PROJECT_DIR$/BeybladeProgram/BeybladeProgram.iml" filepath="$PROJECT_DIR$/BeybladeProgram/BeybladeProgram.iml" />
       <module fileurl="file://$PROJECT_DIR$/Calculator/Calculator.iml" filepath="$PROJECT_DIR$/Calculator/Calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/CalisanlarUygulamasi/CalisanlarUygulamasi.iml" filepath="$PROJECT_DIR$/CalisanlarUygulamasi/CalisanlarUygulamasi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CopyMp3/CopyMp3.iml" filepath="$PROJECT_DIR$/CopyMp3/CopyMp3.iml" />
       <module fileurl="file://$PROJECT_DIR$/EBOB/EBOB.iml" filepath="$PROJECT_DIR$/EBOB/EBOB.iml" />
       <module fileurl="file://$PROJECT_DIR$/EnBuyukSayi/EnBuyukSayi.iml" filepath="$PROJECT_DIR$/EnBuyukSayi/EnBuyukSayi.iml" />
       <module fileurl="file://$PROJECT_DIR$/FaizUygulamasi/FaizUygulamasi.iml" filepath="$PROJECT_DIR$/FaizUygulamasi/FaizUygulamasi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FileWriter/FileWriter.iml" filepath="$PROJECT_DIR$/FileWriter/FileWriter.iml" />
       <module fileurl="file://$PROJECT_DIR$/FrequencyOfAWord/FrequencyOfAWord.iml" filepath="$PROJECT_DIR$/FrequencyOfAWord/FrequencyOfAWord.iml" />
       <module fileurl="file://$PROJECT_DIR$/HafizaOyunu/HafizaOyunu.iml" filepath="$PROJECT_DIR$/HafizaOyunu/HafizaOyunu.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java101.iml" filepath="$PROJECT_DIR$/Java101.iml" />
@@ -23,7 +26,7 @@
       <module fileurl="file://$PROJECT_DIR$/Throw/Throw.iml" filepath="$PROJECT_DIR$/Throw/Throw.iml" />
       <module fileurl="file://$PROJECT_DIR$/TryAndCatch/TryAndCatch.iml" filepath="$PROJECT_DIR$/TryAndCatch/TryAndCatch.iml" />
       <module fileurl="file://$PROJECT_DIR$/UniversiteSinavPuanHesaplama/UniversiteSinavPuanHesaplama.iml" filepath="$PROJECT_DIR$/UniversiteSinavPuanHesaplama/UniversiteSinavPuanHesaplama.iml" />
-      <module fileurl="file://$PROJECT_DIR$/YurtDisiCikis/YurtDisiCikis.iml" filepath="$PROJECT_DIR$/YurtDisiCikis/YurtDisiCikis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WorkoutProgram/WorkoutProgram.iml" filepath="$PROJECT_DIR$/WorkoutProgram/WorkoutProgram.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hipotenüs/untitled.iml" filepath="$PROJECT_DIR$/Hipotenüs/untitled.iml" />
       <module fileurl="file://$PROJECT_DIR$/ÇarpımTablosu/ÇarpımTablosu.iml" filepath="$PROJECT_DIR$/ÇarpımTablosu/ÇarpımTablosu.iml" />
     </modules>
