@@ -14,7 +14,6 @@
       <module fileurl="file://$PROJECT_DIR$/EnBuyukSayi/EnBuyukSayi.iml" filepath="$PROJECT_DIR$/EnBuyukSayi/EnBuyukSayi.iml" />
       <module fileurl="file://$PROJECT_DIR$/FaizUygulamasi/FaizUygulamasi.iml" filepath="$PROJECT_DIR$/FaizUygulamasi/FaizUygulamasi.iml" />
       <module fileurl="file://$PROJECT_DIR$/FileWriter/FileWriter.iml" filepath="$PROJECT_DIR$/FileWriter/FileWriter.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FrequencyOfAWord/FrequencyOfAWord.iml" filepath="$PROJECT_DIR$/FrequencyOfAWord/FrequencyOfAWord.iml" />
       <module fileurl="file://$PROJECT_DIR$/GradeCalculatorWithReader/GradeCalculatorWithReader.iml" filepath="$PROJECT_DIR$/GradeCalculatorWithReader/GradeCalculatorWithReader.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java101.iml" filepath="$PROJECT_DIR$/Java101.iml" />
       <module fileurl="file://$PROJECT_DIR$/LinkedList/LinkedList.iml" filepath="$PROJECT_DIR$/LinkedList/LinkedList.iml" />
@@ -23,6 +22,8 @@
       <module fileurl="file://$PROJECT_DIR$/MemoryGame/MemoryGame.iml" filepath="$PROJECT_DIR$/MemoryGame/MemoryGame.iml" />
       <module fileurl="file://$PROJECT_DIR$/NotHesaplama/NotHesaplama.iml" filepath="$PROJECT_DIR$/NotHesaplama/NotHesaplama.iml" />
       <module fileurl="file://$PROJECT_DIR$/PrimeNumber/PrimeNumber.iml" filepath="$PROJECT_DIR$/PrimeNumber/PrimeNumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProducerConsumerWithArrayBlockingQueue/ProducerConsumerWithArrayBlockingQueue.iml" filepath="$PROJECT_DIR$/ProducerConsumerWithArrayBlockingQueue/ProducerConsumerWithArrayBlockingQueue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProducerConsumerWithWaitNotify/ProducerConsumerWithWaitNotify.iml" filepath="$PROJECT_DIR$/ProducerConsumerWithWaitNotify/ProducerConsumerWithWaitNotify.iml" />
       <module fileurl="file://$PROJECT_DIR$/SingerProgram/SingerProgram.iml" filepath="$PROJECT_DIR$/SingerProgram/SingerProgram.iml" />
       <module fileurl="file://$PROJECT_DIR$/Throw/Throw.iml" filepath="$PROJECT_DIR$/Throw/Throw.iml" />
       <module fileurl="file://$PROJECT_DIR$/TryAndCatch/TryAndCatch.iml" filepath="$PROJECT_DIR$/TryAndCatch/TryAndCatch.iml" />
