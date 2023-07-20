@@ -30,6 +30,7 @@
       <module fileurl="file://$PROJECT_DIR$/ProducerConsumerWithArrayBlockingQueue/ProducerConsumerWithArrayBlockingQueue.iml" filepath="$PROJECT_DIR$/ProducerConsumerWithArrayBlockingQueue/ProducerConsumerWithArrayBlockingQueue.iml" />
       <module fileurl="file://$PROJECT_DIR$/ProducerConsumerWithWaitNotify/ProducerConsumerWithWaitNotify.iml" filepath="$PROJECT_DIR$/ProducerConsumerWithWaitNotify/ProducerConsumerWithWaitNotify.iml" />
       <module fileurl="file://$PROJECT_DIR$/SwingExamples/ProductStock/ProductStock.iml" filepath="$PROJECT_DIR$/SwingExamples/ProductStock/ProductStock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RaffleApplication/RaffleApplication.iml" filepath="$PROJECT_DIR$/RaffleApplication/RaffleApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/SwingExamples/RegisterLogin/RegisterLogin.iml" filepath="$PROJECT_DIR$/SwingExamples/RegisterLogin/RegisterLogin.iml" />
       <module fileurl="file://$PROJECT_DIR$/SingerProgram/SingerProgram.iml" filepath="$PROJECT_DIR$/SingerProgram/SingerProgram.iml" />
       <module fileurl="file://$PROJECT_DIR$/Throw/Throw.iml" filepath="$PROJECT_DIR$/Throw/Throw.iml" />
